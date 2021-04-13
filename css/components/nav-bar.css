@@ -1,0 +1,20 @@
+.nav {
+  background-color: rgba(128, 128, 128, 0.09);
+  height: 4em;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__btn {
+  padding: 1.5em;
+  color: #2e363e;
+  /* border: 1px solid black; */
+}
