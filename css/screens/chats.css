@@ -1,0 +1,21 @@
+.chats-screen {
+  padding: 0 var(--horizontal-space);
+}
+
+.chats__notification {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 350;
+  margin-top: 5px;
+}
+
+.chats__time {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}

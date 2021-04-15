@@ -28,10 +28,6 @@
   align-items: center;
 }
 
-.welcome-header__title {
-  font-family: 'Coming Soon', cursive;
-}
-
 .status-bar__column .fa-battery-full{
   margin: 0px 5px;
 }
