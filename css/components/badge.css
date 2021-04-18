@@ -1,4 +1,4 @@
-.chats__notification {
+.badge {
   background-color: tomato;
   width: 20px;
   height: 20px;
@@ -8,5 +8,4 @@
   align-items: center;
   color: white;
   font-weight: 350;
-  margin-top: 5px;
 }

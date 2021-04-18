@@ -4,6 +4,7 @@
   background-color: #fafafa;
   padding: 15px 0;
   margin-bottom: 10px;
+  
 }
 
 #friends-display-link i {
@@ -17,7 +18,7 @@
 
 .friends-screen__channel-header {
   padding: 15px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--main-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
