@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
-  background-color: rgba(128, 128, 128, 0.091);
+  background-color: rgb(245, 245, 245);
   position: fixed;
   top: 0;
   width: 100%;
