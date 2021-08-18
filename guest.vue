@@ -30,9 +30,10 @@
         <v-row no-gutters>
           <v-col cols="6">
             <v-text-field
+              outlined
+              dense
               class="mx-5"
               :rules="requiredRules"
-              hide-details="auto"
             >
               <template slot="label">
                 <span>氏名(漢字)</span>
@@ -46,9 +47,10 @@
           </v-col>
           <v-col cols="6">
             <v-text-field
+              outlined
+              dense
               class="mx-5"
               :rules="requiredRules"
-              hide-details="auto"
             >
               <template slot="label">
                 <span>氏名(カナ)</span>
@@ -64,17 +66,19 @@
         <v-row no-gutters>
           <v-col cols="6">
             <v-text-field
+              outlined
+              dense
               class="mx-5"
               label="氏名(ローマ字)"
-              hide-details="auto"
             />
           </v-col>
           <v-col cols="2">
             <v-select
+              outlined
+              dense
               class="mx-5"
               :items="gender"
               :rules="requiredRules"
-              hide-details="auto"
             >
               <template slot="label">
                 <span>性別</span>
@@ -90,9 +94,10 @@
         <v-row no-gutters>
           <v-col cols="6">
             <v-text-field
+              outlined
+              dense
               class="mx-5"
               :rules="requiredRules"
-              hide-details="auto"
             >
               <template slot="label">
                 <span>所属会社</span>
@@ -106,119 +111,21 @@
           </v-col>
           <v-col cols="6">
             <v-text-field
+              outlined
+              dense
               class="mx-5"
               label="出向元会社名"
-              hide-details="auto"
             />
           </v-col>
         </v-row>
         <v-row no-gutters>
-          <v-col
-            cols="6"
-            class="pb-8"
-          >
+          <v-col cols="6">
             <v-text-field
+              outlined
+              dense
               class="mx-5"
               label="座席番号"
-              hide-details="auto"
             />
-          </v-col>
-        </v-row>
-      </v-card>
-      <!-- 詳細情報 -->
-      <v-card
-        class="ma-5"
-        outlined
-      >
-        <v-card-subtitle class="text-h6 font-weight-bold">
-          雇用形態ゲスト詳細情報(労務更新情報)
-        </v-card-subtitle>
-        <v-row no-gutters>
-          <v-col cols="8">
-            <v-select
-              class="mx-5"
-              outlined
-              :items="mock"
-            >
-              <template slot="label">
-                <span>参画プロジェクト</span>
-                <strong
-                  class="red--text"
-                >
-                  *
-                </strong>
-              </template>
-            </v-select>
-          </v-col>
-          <v-col cols="4">
-            <v-select
-              class="mx-5"
-              outlined
-              :items="mock"
-              :rules="requiredRules"
-            >
-              <template slot="label">
-                <span>勤務体形</span>
-                <strong
-                  class="red--text"
-                >
-                  *
-                </strong>
-              </template>
-            </v-select>
-          </v-col>
-        </v-row>
-        <v-row no-gutters>
-          <v-col cols="4">
-            <v-select
-              class="mx-5"
-              outlined
-              :items="selectValue"
-              :rules="requiredRules"
-            >
-              <template slot="label">
-                <span>ネームプレートの有無</span>
-                <strong
-                  class="red--text"
-                >
-                  *
-                </strong>
-              </template>
-            </v-select>
-          </v-col>
-          <v-col cols="4">
-            <v-select
-              class="mx-5"
-              outlined
-              :items="selectValue"
-              :rules="requiredRules"
-            >
-              <template slot="label">
-                <span>バルーンの有無</span>
-                <strong
-                  class="red--text"
-                >
-                  *
-                </strong>
-              </template>
-            </v-select>
-          </v-col>
-          <v-col cols="4">
-            <v-select
-              class="mx-5"
-              outlined
-              :items="selectValue"
-              :rules="requiredRules"
-            >
-              <template slot="label">
-                <span>ゲストカードの有無</span>
-                <strong
-                  class="red--text"
-                >
-                  *
-                </strong>
-              </template>
-            </v-select>
           </v-col>
         </v-row>
       </v-card>
@@ -249,6 +156,7 @@
                   class="mx-5"
                   label="初出社日"
                   outlined
+                  dense
                   readonly
                   v-bind="attrs"
                   prepend-inner-icon="mdi-calendar"
@@ -289,6 +197,7 @@
                   class="mx-5"
                   label="契約開始日"
                   outlined
+                  dense
                   readonly
                   v-bind="attrs"
                   prepend-inner-icon="mdi-calendar"
@@ -330,6 +239,7 @@
                   v-model="date4"
                   class="mx-5"
                   outlined
+                  dense
                   readonly
                   v-bind="attrs"
                   prepend-inner-icon="mdi-calendar"
@@ -370,6 +280,7 @@
                   class="mx-5"
                   label="退社日"
                   outlined
+                  dense
                   readonly
                   v-bind="attrs"
                   prepend-inner-icon="mdi-calendar"
@@ -402,6 +313,7 @@
                   class="mx-5"
                   label="CA管理登録日"
                   outlined
+                  dense
                   readonly
                   v-bind="attrs"
                   prepend-inner-icon="mdi-calendar"
@@ -432,6 +344,7 @@
                   class="mx-5"
                   label="最終出社日"
                   outlined
+                  dense
                   readonly
                   v-bind="attrs"
                   prepend-inner-icon="mdi-calendar"
@@ -453,9 +366,112 @@
             <v-select
               class="mx-5"
               outlined
+              dense
               label="契約先(取引先)"
               :items="mock"
             />
+          </v-col>
+        </v-row>
+      </v-card>
+      <!-- 詳細情報 -->
+      <v-card
+        class="ma-5"
+        outlined
+      >
+        <v-card-subtitle class="text-h6 font-weight-bold">
+          雇用形態ゲスト詳細情報(労務更新情報)
+        </v-card-subtitle>
+        <v-row no-gutters>
+          <v-col cols="8">
+            <v-select
+              class="mx-5"
+              dense
+              outlined
+              :items="mock"
+            >
+              <template slot="label">
+                <span>参画プロジェクト</span>
+                <strong
+                  class="red--text"
+                >
+                  *
+                </strong>
+              </template>
+            </v-select>
+          </v-col>
+          <v-col cols="4">
+            <v-select
+              class="mx-5"
+              dense
+              outlined
+              :items="mock"
+              :rules="requiredRules"
+            >
+              <template slot="label">
+                <span>勤務体形</span>
+                <strong
+                  class="red--text"
+                >
+                  *
+                </strong>
+              </template>
+            </v-select>
+          </v-col>
+        </v-row>
+        <v-row no-gutters>
+          <v-col cols="4">
+            <v-select
+              class="mx-5"
+              dense
+              outlined
+              :items="selectValue"
+              :rules="requiredRules"
+            >
+              <template slot="label">
+                <span>ネームプレートの有無</span>
+                <strong
+                  class="red--text"
+                >
+                  *
+                </strong>
+              </template>
+            </v-select>
+          </v-col>
+          <v-col cols="4">
+            <v-select
+              class="mx-5"
+              dense
+              outlined
+              :items="selectValue"
+              :rules="requiredRules"
+            >
+              <template slot="label">
+                <span>バルーンの有無</span>
+                <strong
+                  class="red--text"
+                >
+                  *
+                </strong>
+              </template>
+            </v-select>
+          </v-col>
+          <v-col cols="4">
+            <v-select
+              class="mx-5"
+              dense
+              outlined
+              :items="selectValue"
+              :rules="requiredRules"
+            >
+              <template slot="label">
+                <span>ゲストカードの有無</span>
+                <strong
+                  class="red--text"
+                >
+                  *
+                </strong>
+              </template>
+            </v-select>
           </v-col>
         </v-row>
       </v-card>
@@ -541,10 +557,27 @@ export default {
     lengthRules: [v => v.length < 25 || '最大1000文字までです'],
   }),
   //
+  computed: {
+    computedDateFormatted () {
+      return this.formatDate(this.date)
+    },
+  },
+
+  watch: {
+    date (val) {
+      this.dateFormatted = this.formatDate(this.date)
+    },
+  },
   methods: {
     validate () {
       this.$refs.form.validate()
     },
+    formatDate (date) {
+      if (!date) return null
+
+      const [year, month, day] = date.split('-')
+      return `${year}/${month}/${day}`
+    }
   }
 }
 </script>
